@@ -19,7 +19,7 @@ import com.wind_now.statistics_api.latest.LatestBuilder;
  *
  * @author ono
  */
-public class Latest implements Serializable{
+public class Latest implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	static final Logger logger = LoggerFactory.getLogger(Latest.class);
@@ -29,14 +29,14 @@ public class Latest implements Serializable{
 		logger.info("[{}] latest() - result {} daily views. Completed.",
 			title,
 			String.valueOf(response.getDailyViews().size()));
-        return(response);
-    }
+		return (response);
+	}
 
 	@SuppressWarnings("unchecked")
-	private <T, S> T invoke(S arg, Builder builder, Class<T> clazz){
-        T result;
-        Director director = new Director(builder);
-        result = (T)director.construct(arg, clazz);
-        return result;
-    }
+	private <T, S> T invoke(S arg, Builder builder, Class<T> clazz) {
+		T result;
+		Director director = new Director(builder);
+		result = (T) director.construct(arg, clazz);
+		return result;
+	}
 }

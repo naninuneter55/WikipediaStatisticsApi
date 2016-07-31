@@ -22,18 +22,18 @@ public class LatestResponse implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@SerializedName("daily_views")
-    private LinkedHashMap<String, Integer> dailyViews;
+	private LinkedHashMap<String, Integer> dailyViews;
 
-    @SerializedName("project")
-    private String project;
+	@SerializedName("project")
+	private String project;
 
-    @SerializedName("month")
-    private String month;
+	@SerializedName("month")
+	private String month;
 
-    @SerializedName("rank")
-    private Integer rank;
+	@SerializedName("rank")
+	private Integer rank;
 
-    @SerializedName("title")
-    private String title;
+	@SerializedName("title")
+	private String title;
 
 }

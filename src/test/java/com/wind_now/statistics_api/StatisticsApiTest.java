@@ -17,33 +17,33 @@ import com.wind_now.statistics_api.beans.LatestResponse;
  */
 public class StatisticsApiTest {
 
-    public StatisticsApiTest() {
-    }
+	public StatisticsApiTest() {
+	}
 
-    @BeforeClass
-    public static void setUpClass() {
-    }
+	@BeforeClass
+	public static void setUpClass() {
+	}
 
-    @AfterClass
-    public static void tearDownClass() {
-    }
+	@AfterClass
+	public static void tearDownClass() {
+	}
 
-    @Before
-    public void setUp() {
-    }
+	@Before
+	public void setUp() {
+	}
 
-    @After
-    public void tearDown() {
-    }
+	@After
+	public void tearDown() {
+	}
 
-    @Test
-    public void latest() throws Exception {
-        String title = "吹奏楽";
-        Latest search = new Latest();
-        LatestResponse res = search.latest(title);
-        String actual = res.getTitle();
-        String expected = title;
-        assertThat(actual, is(expected));
-    }
+	@Test
+	public void latest() throws Exception {
+		String title = "吹奏楽";
+		Latest search = new Latest();
+		LatestResponse res = search.latest(title);
+		String actual = res.getTitle();
+		String expected = title;
+		assertThat(actual, is(expected));
+	}
 
 }

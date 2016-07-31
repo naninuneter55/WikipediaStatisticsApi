@@ -15,14 +15,14 @@ import org.apache.http.message.BasicNameValuePair;
  *
  * @author ono
  */
-public class LatestBuilder extends Builder{
+public class LatestBuilder extends Builder {
 
-    @Override
-    public URI getUri(String title) {
-        List<NameValuePair> params = new ArrayList<>();
-        params.add(new BasicNameValuePair("day", "30"));
-        params.add(new BasicNameValuePair("title", title));
-        return(getUri(params));
-    }
+	@Override
+	public URI getUri(String title) {
+		List<NameValuePair> params = new ArrayList<>();
+		params.add(new BasicNameValuePair("day", "30"));
+		params.add(new BasicNameValuePair("title", title));
+		return (getUri(params));
+	}
 
 }
